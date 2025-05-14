@@ -1,0 +1,92 @@
+/* SymptomChecker.css */
+
+.symptom-checker-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.symptom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.suggestions {
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.suggestion {
+  padding: 10px;
+  cursor: pointer; /* 🖐 Show hand on hover */
+  transition: background-color 0.3s;
+}
+
+.suggestion:hover {
+  background-color: #f0f0f0;
+}
+
+.selected-symptoms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.selected-symptom {
+  background-color: #e0f7fa;
+  padding: 8px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.selected-symptom button {
+  background: transparent;
+  border: none;
+  color: #0077b6;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer; 
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected-symptom button:hover {
+  color: #d00000;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #005f87;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffe7e7;
+  border-left: 5px solid #b60000;
+  border-radius: 5px;
+}

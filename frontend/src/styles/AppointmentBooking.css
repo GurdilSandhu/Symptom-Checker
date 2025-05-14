@@ -1,0 +1,43 @@
+.appointment-booking {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .appointment-booking h2 {
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0077b6;
+  }
+  
+  .confirmation {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e1f5fe;
+    border-radius: 5px;
+  }
+  
+  .devlopment{
+    background-color: #9ad89c;
+    color: #1e8c1d;
+  }

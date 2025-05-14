@@ -1,0 +1,18 @@
+.after-login-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 20px;
+    min-height: 65vh;
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  .left, .right {
+    width: 48%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

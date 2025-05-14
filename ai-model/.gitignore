@@ -1,0 +1,7 @@
+ai-model/__pycache__/
+ai-model/venv/
+ai-model/.env
+ai-model/*.pyc
+ai-model/*.pyo
+ai-model/.DS_Store
+ai-model/.vscode/

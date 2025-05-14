@@ -1,0 +1,110 @@
+/* Container Styling */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 87vh;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 0px;
+  height: 87vh;
+  background-image: url(C:\Users\hp\OneDrive\Desktop\HealthCare\frontend\src\styles\514-5148559_doctors-doctor-and-patient-png-transparent-png.png); /* Adjust path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Styling */
+.login-form {
+  background: #3d5978;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.login-form:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Fields */
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #070707;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Button Styling */
+.login-form button {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 10px;
+  background: #4caf50;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background: #45a049;
+}
+
+.login-form button:active {
+  background: #3e8e41;
+}
+
+/* Heading */
+.login-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fcf9f9;
+  background-color: #3d5978;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .login-form {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #ff4d4d;  /* Red color for error */
+  background: #ffe6e6;  /* Light red background */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ff4d4d;
+  border-radius: 5px;
+  text-align: center;
+}
+

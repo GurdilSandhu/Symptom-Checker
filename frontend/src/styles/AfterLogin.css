@@ -1,6 +1,6 @@
 .after-login-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 30px;
     gap: 20px;
     min-height: 65vh;
@@ -8,7 +8,8 @@
     margin-top: 0px;
   }
   
-  .left, .right {
+  .left{
+    display: flex;
     width: 48%;
     background: #f4f4f4;
     padding: 20px;
@@ -16,3 +17,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  .heading{
+    display: flex;
+    justify-content: center;
+  }

@@ -10,7 +10,7 @@ const AfterLogin = () => {
         <SymptomChecker />
       </div>
       <div className="right">
-        <AppointmentBooking />
+        {/* <AppointmentBooking /> */}
       </div>
     </div>
   );

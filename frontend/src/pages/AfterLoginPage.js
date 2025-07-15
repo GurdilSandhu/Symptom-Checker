@@ -4,7 +4,8 @@ import AfterLogin from '../components/AfterLogin';
 const AfterLoginPage = () => {
   return (
     <div>
-      <h1>Welcome to Healthcare Assistant</h1>
+    <div className='heading'>
+      <h1>Welcome to Healthcare Assistant</h1></div>
       <AfterLogin />
     </div>
   );

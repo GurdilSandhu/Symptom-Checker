@@ -7,26 +7,10 @@ const generateToken = (id) => {
 };
 
 // Register User
-// export const register = async (req, res) => {
-//   const { name, email, password, role } = req.body;
-
-//   try {
-//     const userExists = await User.findOne({ email });
-//     if (userExists) return res.status(400).json({ message: "User already exists" });
-
-//     const hashedPassword = await bcrypt.hash(password, 10);
-//     const newUser = await User.create({ name, email, password: hashedPassword, role });
-
-//     res.json({ token: generateToken(newUser._id) });
-//   } catch (error) {
-//     res.status(500).json({ message: "Server Error" });
-//   }
-// };
-
 export const register = async (req, res) => {
   const { name, email, password, role } = req.body;
 
-  console.log("📩 Incoming Request Data:", req.body); // ✅ Log request data
+  console.log("📩 Incoming Request Data:", req.body); // Log request data
   
   try {
     const userExists = await User.findOne({ email });
@@ -38,10 +22,10 @@ export const register = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
     const newUser = await User.create({ name, email, password: hashedPassword, role });
 
-    console.log("✅ User Created:", newUser);
+    console.log("User Created:", newUser);
     res.json({ message: "Registration successful", token: generateToken(newUser._id) });
   } catch (error) {
-    console.error("❌ Backend Error:", error);  // ✅ Log full backend error
+    console.error("Backend Error:", error);  // Log full backend error
     res.status(500).json({ message: "Server Error", error: error.message });
   }
 };

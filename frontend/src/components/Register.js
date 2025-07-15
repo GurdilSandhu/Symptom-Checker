@@ -26,20 +26,20 @@ const Register = () => {
     setError("");
   
     try {
-      console.log("📩 Sending request:", formData); // ✅ Log request data
+      console.log("Sending request:", formData); // Log request data
       const response = await registerUser(formData);
-      console.log("✅ Response from API:", response); // ✅ Log response
+      console.log("Response from API:", response); // Log response
   
       if (response.message === "User already exists") {
-        setError("⚠️ User already exists! Please login.");
+        setError("User already exists! Please login.");
       } else if (response.message === "Registration successful") {
-        setMessage("✅ Registration Successful! Please Login.");
+        setMessage("Registration Successful! Please Login.");
       } else {
-        setError("❌ Registration failed! Try again.");
+        setError("Registration failed! Try again.");
       }
     } catch (error) {
-      console.error("❌ API Error:", error.response?.data || error.message); // ✅ Log error details
-      setError(error.response?.data?.message || "❌ Server error! Check console.");
+      console.error("API Error:", error.response?.data || error.message); // Log error details
+      setError(error.response?.data?.message || "Server error! Check console.");
     }
   };
   

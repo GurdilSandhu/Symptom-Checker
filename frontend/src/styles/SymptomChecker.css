@@ -1,4 +1,4 @@
-/* SymptomChecker.css */
+
 
 .symptom-checker-container {
   max-width: 600px;
@@ -21,7 +21,7 @@
 
 .suggestion {
   padding: 10px;
-  cursor: pointer; /* 🖐 Show hand on hover */
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .submit-btn {
-  width: 100%;
+  width: 625px;
   padding: 12px;
   background-color: #0077b6;
   color: white;
@@ -89,4 +89,5 @@
   background-color: #ffe7e7;
   border-left: 5px solid #b60000;
   border-radius: 5px;
+  text-align: left;
 }

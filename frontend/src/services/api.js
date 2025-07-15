@@ -6,16 +6,16 @@ export const registerUser = async (userData) => {
   try {
     const response = await axios.post(
       `${API_URL}/register`,
-      JSON.stringify(userData),  // ✅ Ensure JSON format
+      JSON.stringify(userData),  // Ensure JSON format
       {
         headers: {
-          "Content-Type": "application/json", // ✅ Required header
+          "Content-Type": "application/json", // Required header
         },
       }
     );
     return response.data;
   } catch (error) {
-    console.error("❌ Axios Error:", error.response?.data || error.message);
+    console.error("Axios Error:", error.response?.data || error.message);
     throw error;
   }
 };

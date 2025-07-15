@@ -147,7 +147,14 @@ const SymptomChecker = () => {
 
       {result && (
         <div className="result">
-          <h3>There may be chances of {result.prediction}</h3>
+          <ul>
+  {result.prediction.map((item, index) => (
+    <li key={index}>
+      <p>There are  {Math.round(item.probability * 100)}% chances of <strong>{item.disease}</strong></p>
+    </li>
+  ))}
+</ul>
+          {/* <h3>There may be chances of {result.prediction}</h3> */}
         </div>
       )}
     </div>

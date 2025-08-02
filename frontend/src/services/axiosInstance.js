@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://healthcare-1-2b0j.onrender.com/api/auth" });
+const API = axios.create({ baseURL: "https://symptom-checker-backend-06mx.onrender.com/api/auth" });
 
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");

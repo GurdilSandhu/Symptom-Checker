@@ -1,5 +1,3 @@
-
-
 import os
 import json
 from flask import Flask, request, jsonify
@@ -14,9 +12,9 @@ CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
 here = os.path.dirname(__file__)
 
-MODEL_PATH   = os.path.join(here, "../model/rf_disease_model.joblib")
-ENCODER_PATH = os.path.join(here, "../model/label_encoder.joblib")
-COLS_PATH    = os.path.join(here, "../model/symptom_columns.json")
+MODEL_PATH = os.path.abspath(os.path.join(here, "../model/rf_disease_model.joblib"))
+ENCODER_PATH = os.path.abspath(os.path.join(here, "../model/label_encoder.joblib"))
+COLS_PATH    = os.path.abspath(os.path.join(here, "../model/symptom_columns.json"))
 
 def load_artefact(path, loader, name):
     try:

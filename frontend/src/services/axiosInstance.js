@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:7000/api" });
+const API = axios.create({ baseURL: "https://healthcare-1-2b0j.onrender.com/api/auth/api" });
 
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");

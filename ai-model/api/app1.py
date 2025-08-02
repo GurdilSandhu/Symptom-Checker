@@ -7,7 +7,14 @@ import pandas as pd
 import numpy as np
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://symptom-checker-frontend-2j9n.onrender.com"}})
+origins=["https://symptom-checker-frontend-2j9n.onrender.com"]
+
+CORS(app,
+     resources={r"/api/*": {"origins": "*"}},
+     supports_credentials=True,
+     methods=["GET", "POST", "OPTIONS"],
+     allow_headers=["Content-Type"]
+)
 
 
 here = os.path.dirname(__file__)

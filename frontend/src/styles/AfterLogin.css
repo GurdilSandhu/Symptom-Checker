@@ -1,23 +1,26 @@
 .after-login-container {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    gap: 20px;
-    min-height: 65vh;
-    text-align: center;
-    margin-top: 0px;
-  }
-  
-  .left{
-    display: flex;
-    width: 48%;
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .heading{
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+  min-height: 65vh;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}

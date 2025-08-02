@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://healthcare-1-2b0j.onrender.com/api/auth/api/auth";
+const API_URL = "https://healthcare-1-2b0j.onrender.com/api/auth";
 
 export const registerUser = async (userData) => {
   try {

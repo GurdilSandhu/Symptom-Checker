@@ -12,14 +12,24 @@ connectDB();
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:3000", // Allow frontend requests
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true, // Allow authentication headers
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+      "http://localhost:3000",
+      "https://symptom-checker-frontend-2j9n.onrender.com"
+    ];
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
-app.use(express.json()); // Ensure JSON body parsing
-app.use(express.urlencoded({ extended: true })); // Parse form data
 
-// Routes
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.use("/api/auth", authRoutes);
 app.use("/api/appointments", appointmentRoutes);
 app.use('/api/symptoms', symptomRoutes);
